@@ -1,0 +1,296 @@
+:root {
+  --main-bg-color: pink;
+  --container-height: 80vh;
+  --button-height: calc(var(--container-height) / 6);
+}
+
+.appMain {
+  background: rgb(132, 96, 237);
+  background: linear-gradient(
+    45deg,
+    rgba(132, 96, 237, 1) 0%,
+    rgba(255, 79, 127, 1) 85%
+  );
+  min-height: 100vh;
+  padding: 1vw;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttonLOGIN {
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  color: white;
+  display: inline-block;
+}
+
+.buttonLOGIN:hover {
+  opacity: 0.5;
+}
+
+.circleContainer {
+  background: white;
+  border-radius: 50%;
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  top: 2vh;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 11.5vw;
+  height: 11.5vw;
+}
+
+.container {
+  width: 40vw;
+  height: 70vh;
+  background: white;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerTables {
+  width: 80vw;
+  height: 80vh;
+  background: white;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.table2 {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #283c34;
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+  text-align: center;
+}
+
+.tablesButtons {
+  height: var(--button-height);
+  background-color: rgba(255, 79, 127, 1);
+  transition-duration: 0.5s;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: white;
+}
+
+.tablesButtons:hover {
+  opacity: 0.5;
+}
+
+.containerTablesButtons {
+  position: absolute;
+  left: 10vw;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.menuText {
+  font-size: 2vw;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    rgba(132, 96, 237, 1),
+    rgba(255, 79, 127, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 4.5vw;
+  justify-content: center;
+}
+
+.menuButtons {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  display: inline-block;
+  overflow-y: scroll;
+  max-height: 70vh;
+  max-width: 40vw;
+}
+
+.menuTablesContainer {
+  position: absolute;
+  left: 23vw;
+  align-items: center;
+}
+
+.menuTables {
+  display: inline-block;
+  flex-flow: column wrap;
+  height: 75vh;
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuTablesContainer2 {
+  position: absolute;
+  left: 29vw;
+  align-items: center;
+}
+
+.menuTablesPOST {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.containerDelete {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.buttonDeleteID {
+  width: 18vw;
+  height: 8vh;
+  align-items: center;
+  appearance: none;
+  background-color: #fbe7e7;
+  border-style: none;
+  transition-duration: 0.5s;
+  margin-bottom: 2vh;
+}
+
+.buttonDeleteID:hover {
+  background-color: #ff433f;
+}
+
+.buttonDeleteID:focus,
+.buttonDeleteID:focus:after,
+.buttonDeleteID:active:after {
+  background-color: #ff433f;
+  display: none;
+}
+
+input,
+select {
+  width: 40vw;
+  padding: 10px 18px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formStyle {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 50vw;
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.buttonGET {
+  width: 38vw;
+  height: 8vh;
+  background-color: #eaf3fb;
+  transition-duration: 0.5s;
+  color: #55b1fb;
+  margin-bottom: 1vw;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #55b1fb;
+}
+.buttonGET:hover {
+  opacity: 0.5;
+}
+
+.table {
+  display: table-row;
+  justify-content: center;
+}
+.buttonPOST {
+  width: 38vw;
+  height: 8vh;
+  background-color: #e7f6f0;
+  transition-duration: 0.5s;
+  color: #3bca94;
+  margin-bottom: 1vw;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #3bca94;
+}
+.buttonPOST:hover {
+  opacity: 0.5;
+}
+.buttonPUT {
+  width: 38vw;
+  height: 8vh;
+  background-color: #fcf1e7;
+  transition-duration: 0.5s;
+  color: #ffa03e;
+  margin-bottom: 1vw;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #ffa03e;
+}
+.buttonPUT:hover {
+  opacity: 0.5;
+}
+.buttonDELETE {
+  width: 38vw;
+  height: 8vh;
+  background-color: #fbe7e7;
+  transition-duration: 0.5s;
+  color: #ff433f;
+  margin-bottom: 1vw;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-color: #ff433f;
+}
+.buttonDELETE:hover {
+  opacity: 0.5;
+}
+body {
+  overflow: hidden;
+}
